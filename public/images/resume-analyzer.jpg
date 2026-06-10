@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Document icon -->
+  <g transform="translate(400, 240)" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-70 -80 L10 -80 L70 -20 L70 80 L-70 80 Z"/>
+    <path d="M10 -80 L10 -20 L70 -20"/>
+    <line x1="-40" y1="20" x2="40" y2="20"/>
+    <line x1="-40" y1="50" x2="40" y2="50"/>
+  </g>
+  <!-- Search magnifying glass -->
+  <g transform="translate(540, 120)" fill="none" stroke="white" stroke-width="5" stroke-linecap="round">
+    <circle cx="0" cy="0" r="25"/>
+    <line x1="18" y1="18" x2="40" y2="40"/>
+  </g>
+  <!-- Sparkle dots -->
+  <circle cx="230" cy="140" r="4" fill="white" opacity="0.5"/>
+  <circle cx="260" cy="120" r="2.5" fill="white" opacity="0.3"/>
+  <circle cx="210" cy="110" r="2" fill="white" opacity="0.4"/>
+  <!-- AI stars -->
+  <text x="340" y="420" font-family="Inter, system-ui, sans-serif" font-size="20" fill="white" opacity="0.4" text-anchor="middle">✦ powered by AI ✦</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="36" fill="white" font-weight="bold" letter-spacing="2">RESUME ANALYZER</text>
+  <text x="400" y="545" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="white" opacity="0.6" letter-spacing="3">AI DOCUMENT ANALYSIS</text>
+</svg>

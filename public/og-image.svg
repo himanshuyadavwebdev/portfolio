@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0d2b35"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grad)" opacity="0.15"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+  <text x="600" y="280" text-anchor="middle" font-size="80" font-family="serif" fill="#ffffff" font-weight="bold">Himanshu Yadav</text>
+  <text x="600" y="350" text-anchor="middle" font-size="28" fill="#c8d8dc" font-family="sans-serif">Frontend Developer &amp; CSE Student</text>
+  <rect x="450" y="380" width="300" height="3" rx="1.5" fill="url(#grad)"/>
+</svg>

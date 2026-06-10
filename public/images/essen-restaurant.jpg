@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4b86a"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Plate -->
+  <circle cx="400" cy="260" r="90" fill="none" stroke="white" stroke-width="5"/>
+  <circle cx="400" cy="260" r="60" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Fork left -->
+  <g transform="translate(280, 260)" fill="none" stroke="white" stroke-width="5" stroke-linecap="round">
+    <line x1="0" y1="-50" x2="0" y2="60"/>
+    <line x1="-12" y1="-50" x2="-12" y2="-30"/>
+    <line x1="12" y1="-50" x2="12" y2="-30"/>
+    <line x1="-12" y1="-50" x2="12" y2="-50"/>
+  </g>
+  <!-- Knife right -->
+  <g transform="translate(520, 260)" fill="none" stroke="white" stroke-width="5" stroke-linecap="round">
+    <line x1="0" y1="-50" x2="0" y2="60"/>
+    <path d="M0 -50 Q20 -30 20 0 L20 10" />
+  </g>
+  <!-- Decorative dots -->
+  <circle cx="200" cy="150" r="4" fill="white" opacity="0.3"/>
+  <circle cx="600" cy="150" r="4" fill="white" opacity="0.3"/>
+  <circle cx="200" cy="400" r="4" fill="white" opacity="0.3"/>
+  <circle cx="600" cy="400" r="4" fill="white" opacity="0.3"/>
+  <text x="400" y="510" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="36" fill="white" font-weight="bold" letter-spacing="2">ESSEN</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="white" opacity="0.8" transform="translate(0,32)" letter-spacing="3">RESTAURANT</text>
+</svg>

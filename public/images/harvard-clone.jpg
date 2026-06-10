@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#800020"/>
+      <stop offset="100%" style="stop-color:#4d0013"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84c"/>
+      <stop offset="100%" style="stop-color:#a8882e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Shield -->
+  <path d="M400 80 L520 130 L520 290 Q520 390 400 450 Q280 390 280 290 L280 130 Z" fill="none" stroke="url(#gold)" stroke-width="6"/>
+  <path d="M350 190 L450 190 L450 210 L350 210 Z" fill="url(#gold)"/>
+  <path d="M370 210 L430 210 L430 300 L400 330 L370 300 Z" fill="url(#gold)"/>
+  <!-- Pillars -->
+  <rect x="300" y="290" width="10" height="100" fill="url(#gold)" rx="2"/>
+  <rect x="490" y="290" width="10" height="100" fill="url(#gold)" rx="2"/>
+  <rect x="310" y="380" width="180" height="12" fill="url(#gold)" rx="3"/>
+  <!-- Text -->
+  <text x="400" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="url(#gold)" font-weight="bold" letter-spacing="2">HARVARD CLONE</text>
+  <text x="400" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="4">VERITAS</text>
+</svg>
