@@ -1,6 +1,6 @@
 # Portfolio — Himanshu Yadav
 
-A premium, interactive developer portfolio built with Next.js 16, TypeScript, Tailwind CSS v4, and Framer Motion. Features a custom cursor, smooth scroll, dark/light themes, animated skill rings, and cinematic section reveals.
+A premium, interactive developer portfolio built with Next.js 16, TypeScript, Tailwind CSS v4, and Framer Motion. Features a custom cursor, smoothscroll, dark/light themes, animated skill rings, and cinematic section reveals.
 
 ## Tech Stack
 
