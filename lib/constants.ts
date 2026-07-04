@@ -4,7 +4,7 @@ export const PERSONAL = {
   name: "Himanshu",
   fullName: "Himanshu Yadav",
   title: "Frontend Developer",
-  email: "himanshu76780@gmail.com",
+  email: "himanshuyadavwebdev@gmail.com",
   phone: "7678662985",
   location: "Greater Noida, India",
   available: true,
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
   {
     id: "figma-clone",
     title: "Figma Clone",
-    description: "Collaborative real-time canvas editor inspired by Figma using Next.js, TypeScript, and Fabric.js. Supports real-time multi-user collaboration powered by Liveblocks with shape creation, drag-and-drop, and layered canvas elements.",
+    description: "Built a collaborative real-time canvas editor inspired by Figma using Next.js, TypeScript, and Fabric.js. Supports real-time multi-user collaboration powered by Liveblocks with features including shape creation, drag-and-drop, and layered canvas elements.",
     image: "/images/figma-clone.jpg",
     tags: ["Next.js", "TypeScript", "Fabric.js", "Liveblocks"],
     category: "featured",
@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
   {
     id: "resume-analyzer",
     title: "Resume Analyzer",
-    description: "AI-powered multilingual resume analyzer built with React.js, Node.js, and Groq AI (Llama 3.1) with Firebase Authentication and a custom PDF parser. Supports 7 languages with Resume Score, ATS Score, strengths, and improvement suggestions.",
+    description: "Built an AI-powered multilingual resume analyzer using React.js, Node.js, and Groq AI (Llama 3.1) with Firebase Authentication and a custom PDF parser. Supports 7 languages and provides Resume Score, ATS Score, strengths, and improvement suggestions.",
     image: "/images/resume-analyzer.jpg",
     tags: ["React", "Node.js", "Groq AI", "Firebase", "PDF Parser"],
     category: "featured",
@@ -113,7 +113,7 @@ export const PROJECTS: Project[] = [
   {
     id: "sitehealth-dashboard",
     title: "SiteHealth Dashboard",
-    description: "A website health analyzer built with React.js and the Claude API. Scans any URL and reports on performance, security, page weight, and technical issues with scored dimensions and improvement suggestions.",
+    description: "Developed a website health analyzer using React.js and the Claude API that scans any URL and reports on performance, security, page weight, and technical issues with improvement suggestions.",
     image: "/images/sitehealth-dashboard.jpg",
     tags: ["React", "Claude API", "Node.js", "Tailwind CSS"],
     category: "featured",
@@ -134,17 +134,17 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "frontend-intern",
-    role: "Frontend Developer Intern",
+    id: "frontend-dev",
+    role: "Frontend Developer",
     company: "NogaTech IT Solutions",
-    period: "Dec 2025 - Jun 2026",
-    description: "Designed and improved web application interfaces at NogaTech IT Solutions using React.js, HTML, CSS, and JavaScript to enhance usability and performance.",
+    period: "12/2024 - Present",
+    description: "Developed responsive and mobile-first web applications using React.js, Next.js, JavaScript, HTML5, CSS3, and Tailwind CSS. Transformed client design specifications into scalable, production-ready user interfaces with a focus on performance and accessibility.",
     achievements: [
-      "Designed and improved layout and visual structure of web applications using React.js, HTML, and CSS to enhance usability and consistency",
-      "Built responsive interfaces with React.js and Tailwind CSS alongside senior developers",
-      "Participated in code reviews, bug fixing, and performance optimization of existing web modules",
-      "Conducted QA checks across website content and reported bugs to the development team",
-      "Reviewed project documentation for accuracy, clarity, and consistency",
+      "Developed responsive and mobile-first web applications using React.js, Next.js, and Tailwind CSS",
+      "Transformed client design specifications into scalable, production-ready user interfaces with a focus on performance and accessibility",
+      "Collaborated with a distributed US-based team across multiple time zones using Git/GitHub, participating in code reviews and agile development workflows",
+      "Delivered client-facing projects from development through deployment while maintaining high standards of responsiveness, usability, and cross-browser compatibility",
+      "Identified and resolved frontend issues, improving application stability, performance, and overall user experience",
     ],
     type: "work",
   },
