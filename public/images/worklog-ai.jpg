@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g transform="translate(400,210)">
+    <rect x="-80" y="-60" width="160" height="120" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="-60" y="-40" width="50" height="8" rx="4" fill="rgba(255,255,255,0.5)"/>
+    <rect x="-60" y="-22" width="120" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-60" y="-8" width="90" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-60" y="8" width="110" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-60" y="24" width="70" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="600" fill="#fff" opacity="0.9">Worklog AI</text>
+  <text x="400" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#fff" opacity="0.5">AI-Powered Productivity Tracking</text>
+</svg>

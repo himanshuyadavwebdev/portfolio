@@ -29,7 +29,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const STATS: Stat[] = [
-  { label: "Projects Completed", value: 7, suffix: "+", icon: "code" },
+  { label: "Projects Completed", value: 8, suffix: "+", icon: "code" },
   { label: "Technologies Used", value: 21, suffix: "+", icon: "tools" },
   { label: "Experience", value: 6, suffix: "+ Months", icon: "users" },
   { label: "AI Projects", value: 4, suffix: "+", icon: "stars" },
@@ -118,17 +118,27 @@ export const PROJECTS: Project[] = [
     tags: ["React", "Claude API", "Node.js", "Tailwind CSS"],
     category: "featured",
     accentColor: "#10b981",
-    githubUrl: "https://github.com/himanshuyadavwebdev/sitehealth-dashboard",
+    githubUrl: "https://github.com/himanshuyadavwebdev/sitehealth",
   },
   {
-    id: "syncpad",
-    title: "Syncpad",
-    description: "A Notion-inspired real-time collaborative document editor with live multi-user sync powered by WebSocket and Yjs. Built with a full-stack architecture supporting rich text editing, presence indicators, and instant conflict resolution.",
-    image: "/images/syncpad.jpg",
-    tags: ["Next.js", "TypeScript", "WebSocket", "Yjs", "Tailwind CSS", "Node.js"],
-    category: "featured",
-    accentColor: "#6366f1",
-    githubUrl: "https://github.com/himanshuyadavwebdev/syncpad",
+    id: "worklog-ai",
+    title: "Worklog AI",
+    description: "An AI-powered work log and productivity tracking application that helps developers log daily tasks, track progress, and generate intelligent summaries using AI.",
+    image: "/images/worklog-ai.jpg",
+    tags: ["React", "AI", "Node.js", "Tailwind CSS"],
+    category: "fullstack",
+    accentColor: "#f59e0b",
+    githubUrl: "https://github.com/himanshuyadavwebdev/worklog-ai",
+  },
+  {
+    id: "job-automation",
+    title: "Job Automation",
+    description: "An automated job discovery and application tracking system that streamlines the job search process with smart filtering, status tracking, and automated reminders.",
+    image: "/images/job-automation.jpg",
+    tags: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    category: "fullstack",
+    accentColor: "#8b5cf6",
+    githubUrl: "https://github.com/himanshuyadavwebdev/job-automation",
   },
 ]
 
