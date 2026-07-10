@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react"
 import Image from "next/image"
 import { domAnimation, LazyMotion, m, AnimatePresence } from "framer-motion"
-import { IconBrandGithub } from "@tabler/icons-react"
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react"
 import { PROJECTS } from "@/lib/constants"
 import SectionWrapper from "@/components/ui/SectionWrapper"
 import MagneticButton from "@/components/ui/MagneticButton"
@@ -122,6 +122,88 @@ function FeaturedCard({ project, index }: { project: (typeof PROJECTS)[0]; index
   )
 }
 
+function GridCard({ project }: { project: (typeof PROJECTS)[0] }) {
+  const [imgError, setImgError] = useState(false)
+
+  return (
+    <m.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: [0.25, 0.1, 0, 1] }}
+      className="group flex h-full flex-col overflow-hidden rounded-xl border backdrop-blur-xl transition-all duration-500 hover:scale-[1.02]"
+      style={{
+        borderColor: "var(--border)",
+        backgroundColor: "color-mix(in srgb, var(--bg) 70%, transparent)",
+      }}
+    >
+      {imgError || !project.image ? (
+        <div
+          className="flex aspect-[4/3] items-center justify-center text-4xl font-bold"
+          style={{ backgroundColor: `${project.accentColor}20`, color: project.accentColor }}
+        >
+          {project.title[0]}
+        </div>
+      ) : (
+        <div className="relative aspect-[4/3] overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={() => setImgError(true)}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <h4
+          className="text-lg font-semibold"
+          style={{ color: "var(--text)" }}
+        >
+          {project.title}
+        </h4>
+        <p
+          className="line-clamp-2 text-sm leading-relaxed"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          {project.description}
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag: string) => (
+            <Badge key={tag} label={tag} />
+          ))}
+        </div>
+
+        <div className="mt-auto flex flex-wrap gap-3 pt-2">
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)] px-4 py-1.5 text-xs font-semibold text-[var(--bg)] transition-all hover:opacity-90"
+            >
+              <IconExternalLink size={12} />
+              Live
+            </a>
+          )}
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              className="inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-xs font-semibold transition-all hover:opacity-80"
+              style={{ borderColor: "var(--border)", color: "var(--text)" }}
+            >
+              <IconBrandGithub size={12} />
+              GitHub
+            </a>
+          )}
+        </div>
+      </div>
+    </m.div>
+  )
+}
+
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all")
 
@@ -132,6 +214,9 @@ export default function Projects() {
       p.tags.some((t: string) => t.toLowerCase().includes(activeFilter))
     )
   }, [activeFilter])
+
+  const firstTwo = filteredProjects.slice(0, 2)
+  const restProjects = filteredProjects.slice(2)
 
   return (
     <SectionWrapper id="projects">
@@ -208,11 +293,21 @@ export default function Projects() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.35 }}
                 >
-                  <div className="space-y-10">
-                    {filteredProjects.map((project, index) => (
-                      <FeaturedCard key={project.title} project={project} index={index} />
-                    ))}
-                  </div>
+                  {firstTwo.length > 0 && (
+                    <div className="mb-12 space-y-10">
+                      {firstTwo.map((project, index) => (
+                        <FeaturedCard key={project.title} project={project} index={index} />
+                      ))}
+                    </div>
+                  )}
+
+                  {restProjects.length > 0 && (
+                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                      {restProjects.map((project) => (
+                        <GridCard key={project.title} project={project} />
+                      ))}
+                    </div>
+                  )}
                 </m.div>
               ) : (
                 <m.div
