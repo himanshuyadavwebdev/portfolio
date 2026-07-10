@@ -132,7 +132,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "job-automation",
-    title: "Job Automation",
+    title: "Job Automation System",
     description: "An automated job discovery and application tracking system that streamlines the job search process with smart filtering, status tracking, and automated reminders.",
     image: "/images/job-automation.jpg",
     tags: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
